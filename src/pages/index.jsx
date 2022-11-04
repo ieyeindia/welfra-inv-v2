@@ -109,7 +109,6 @@ export default function Index() {
               Phone number
             </label>
             <input
-              autoFocus
               type="tel"
               name="hero-phone-number"
               id="hero-phone-number"

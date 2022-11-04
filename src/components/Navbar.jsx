@@ -210,7 +210,18 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
+      {/* MOBILE MENU */}
+      <Transition.Child
+        as={Fragment}
+        enter="ease-out duration-200"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+      >
+        <div className="fixed inset-0 z-0 bg-black bg-opacity-20" />
+      </Transition.Child>
       <Transition
         as={Fragment}
         enter="duration-200 ease-out"
@@ -222,9 +233,9 @@ export default function Navbar() {
       >
         <Popover.Panel
           focus
-          className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+          className="absolute inset-x-0 top-0 origin-top-right transform p-3 transition md:hidden"
         >
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="z-10 divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
@@ -241,8 +252,8 @@ export default function Navbar() {
                   </Popover.Button>
                 </div>
               </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-8">
+              <div className="mt-8">
+                <nav className="grid gap-y-9">
                   {services.map((item) => (
                     <a
                       key={item.name}
@@ -261,8 +272,8 @@ export default function Navbar() {
                 </nav>
               </div>
             </div>
-            <div className="space-y-6 py-6 px-5">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
+            <div className="space-y-8 py-6 px-5">
+              <div className="grid grid-cols-2 gap-y-6 gap-x-8">
                 <a
                   href="#"
                   className="text-base font-medium text-gray-dark hover:text-gray-darker"
