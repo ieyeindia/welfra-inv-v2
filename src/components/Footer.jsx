@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/content/logo-main.png";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
+import { Link } from "react-router-dom";
 const services = [
   {
     name: "Advisory calls",
@@ -30,8 +31,8 @@ const company = [
     href: "#",
   },
   {
-    name: "Terms and conditions",
-    href: "#",
+    name: "Terms of use",
+    href: "/terms-of-use",
   },
   {
     name: "Refund policy",
@@ -93,12 +94,12 @@ export default function Footer() {
                   {services.map((service) => {
                     return (
                       <li>
-                        <a
+                        <Link
                           class="text-base text-gray-base transition-all hover:text-slate-900"
-                          href={service.href}
+                          to={service.href}
                         >
                           {service.name}
-                        </a>
+                        </Link>
                       </li>
                     );
                   })}
@@ -162,7 +163,7 @@ export default function Footer() {
           </div>
         </div>
         <div class="mt-12 items-center border-t border-slate-200 pt-8 text-base text-gray-base sm:flex sm:justify-between">
-          <p class="flex justify-center sm:block">
+          <p class="flex text-center sm:block">
             © 2022 Welfra Investment and Assets Management.
           </p>
           <ul class="hidden items-center space-x-3 sm:flex">

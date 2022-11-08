@@ -16,6 +16,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import logo from "../assets/content/logo-main.png";
+import { Link } from "react-router-dom";
 const services = [
   {
     name: "Advisory Calls",
@@ -174,39 +175,39 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a
-              href="#"
+            <Link
+              to="#"
               className="text-base font-medium text-gray-base hover:text-gray-dark"
             >
               Blog
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-base font-medium text-gray-base hover:text-gray-dark"
             >
               Contact
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link
+              to="#"
               className="text-base font-medium text-gray-base hover:text-gray-dark"
             >
               About
-            </a>
+            </Link>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a
-              href="#"
+            <Link
+              to="/signin"
               className="whitespace-nowrap text-base font-medium text-gray-base hover:text-gray-dark"
             >
               Sign in
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="signup"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-lg border border-transparent bg-blue-primary px-4 py-2 text-base font-medium text-white shadow-sm ring-blue-primary ring-offset-2 transition-all hover:bg-blue-800 focus:ring-2"
             >
               Sign up
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -255,9 +256,9 @@ export default function Navbar() {
               <div className="mt-8">
                 <nav className="grid gap-y-9">
                   {services.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                     >
                       <item.icon
@@ -267,48 +268,51 @@ export default function Navbar() {
                       <span className="ml-3 text-base font-medium text-gray-dark">
                         {item.name}
                       </span>
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
             </div>
             <div className="space-y-8 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-6 gap-x-8">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-base font-medium text-gray-dark hover:text-gray-darker"
                 >
                   Pricing
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-base font-medium text-gray-dark hover:text-gray-darker"
                 >
                   Docs
-                </a>
+                </Link>
                 {company.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="text-base font-medium text-gray-dark hover:text-gray-darker"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
               <div>
                 <a
-                  href="#"
+                  href="/signup"
                   className="flex w-full items-center justify-center rounded-lg border border-transparent bg-blue-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-800"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-base">
                   Existing customer?{" "}
-                  <a href="#" className="text-blue-primary hover:text-blue-800">
+                  <Link
+                    to="/signin"
+                    className="text-blue-primary hover:text-blue-800"
+                  >
                     Sign in
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
