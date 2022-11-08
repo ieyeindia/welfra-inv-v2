@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import SignIn from "./pages/Signin";
-import SignUp from "./pages/Signup";
-import TnC from "./pages/tnc";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import TnC from "./pages/Tnc";
 import NotFound from "./pages/NotFound";
 import { Route, Routes } from "react-router-dom";
 
