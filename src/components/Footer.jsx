@@ -113,12 +113,12 @@ export default function Footer() {
                   {company.map((companyItem) => {
                     return (
                       <li>
-                        <a
+                        <Link
                           class="text-base text-gray-base transition-all hover:text-slate-900"
                           href={companyItem.href}
                         >
                           {companyItem.name}
-                        </a>
+                        </Link>
                       </li>
                     );
                   })}
