@@ -82,29 +82,8 @@ export default function Index() {
             Maximize your returns on your investments. Experience the most
             strategic utilization to grow your hard earned money.
           </p>
-
-          {/* <form className="mt-16 flex gap-4">
-            <div className="relative rounded-xl shadow-sm sm:w-[230px]">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-5">
-                <span className="font-medium text-gray-dark sm:text-lg">
-                  +91
-                </span>
-              </div>
-              <input
-                type="tel"
-                name="hero-phone-number"
-                id="hero-phone-number"
-                required
-                className="block w-full rounded-xl border-gray-300 py-3 pl-16 font-medium tracking-wide text-gray-dark placeholder-gray-base focus:border-blue-primary focus:ring-blue-primary sm:text-lg"
-                placeholder="Phone number"
-              />
-            </div>
-            <button className="rounded-xl border border-transparent bg-blue-primary px-11 py-3 text-lg font-medium text-white shadow-xl ring-blue-primary ring-offset-2 transition-all hover:bg-blue-800 hover:shadow-2xl focus:ring-2">
-              Request call back
-            </button>
-          </form> */}
-          <form class="w-full sm:mt-14 sm:flex sm:max-w-[30rem]">
-            <label for="footer-phone-number" class="sr-only">
+          <form className="w-full sm:mt-14 sm:flex sm:max-w-[30rem]">
+            <label htmlFor="footer-phone-number" className="sr-only">
               Phone number
             </label>
             <input
@@ -112,13 +91,13 @@ export default function Index() {
               name="hero-phone-number"
               id="hero-phone-number"
               required
-              class="w-full min-w-0 appearance-none rounded-xl border-gray-200 bg-white py-3 px-4 text-lg text-slate-900 placeholder-slate-500 shadow-sm ring-gray-300 focus:border-blue-primary focus:placeholder-slate-400 focus:outline-none focus:ring-blue-primary"
+              className="w-full min-w-0 appearance-none rounded-xl border-gray-200 bg-white py-3 px-4 text-lg text-slate-900 placeholder-slate-500 shadow-sm ring-gray-300 focus:border-blue-primary focus:placeholder-slate-400 focus:outline-none focus:ring-blue-primary"
               placeholder="Enter phone number"
             />
-            <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+            <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                class="flex w-full items-center justify-center rounded-xl border border-transparent bg-blue-primary py-3 px-11 text-lg font-medium text-white shadow-xl transition-all hover:bg-blue-800 focus:ring-2 focus:ring-blue-primary focus:ring-offset-2"
+                className="flex w-full items-center justify-center rounded-xl border border-transparent bg-blue-primary py-3 px-11 text-lg font-medium text-white shadow-xl transition-all hover:bg-blue-800 focus:ring-2 focus:ring-blue-primary focus:ring-offset-2"
               >
                 Request call back
               </button>

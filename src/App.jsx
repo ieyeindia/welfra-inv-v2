@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import TnC from "./pages/Tnc";
+import TnC from "./pages/TnC";
 import NotFound from "./pages/NotFound";
 import { Route, Routes } from "react-router-dom";
 
