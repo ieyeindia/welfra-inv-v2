@@ -307,12 +307,12 @@ export default function Navbar() {
                 </Link>
                 <p className="mt-6 text-center text-base font-medium text-gray-base">
                   Existing customer?{" "}
-                  <Link
-                    to="/signin"
+                  <a
+                    href="/signin"
                     className="text-blue-primary hover:text-blue-800"
                   >
                     Sign in
-                  </Link>
+                  </a>
                 </p>
               </div>
             </div>
